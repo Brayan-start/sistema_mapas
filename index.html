@@ -1,0 +1,46 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+  <title>Mapa Web SIG-747</title> 
+
+  <!-- # Librería de Leaflet para mapas -->
+  <link 
+    rel="stylesheet" 
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" 
+  /> 
+
+  <!-- # Estilos personalizados -->
+  <link rel="stylesheet" href="styles.css" /> 
+</head> 
+
+<body> 
+  <div class="contenedor"> 
+    <h1>Mapa Web SIG-747</h1> 
+
+    <!-- # Contenedor del mapa -->
+    <div id="mapa"></div> 
+
+    <!-- # Lista donde se mostrarán las coordenadas -->
+    <h3>Coordenadas capturadas:</h3>
+    <ul id="lista-coordenadas"></ul>
+
+    <!-- # Botón para guardar en base de datos -->
+    <button onclick="guardarCoordenadas()">Guardar en BD</button>
+
+    <!-- # Botón para generar PDF -->
+    <button onclick="generarPDF()">Generar PDF</button>
+
+  </div> 
+
+  <!-- # Librería Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script> 
+
+  <!-- # Librería para generar PDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- # Script principal -->
+  <script src="script.js"></script> 
+</body> 
+</html>
